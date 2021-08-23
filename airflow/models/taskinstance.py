@@ -51,6 +51,7 @@ from urllib.parse import quote
 
 import attr
 import dill
+dill.extend(False)
 import jinja2
 import pendulum
 from jinja2 import TemplateAssertionError, UndefinedError
