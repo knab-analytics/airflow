@@ -30,6 +30,7 @@ from typing import IO, Any, Dict, Iterable, List, NamedTuple, Optional, Tuple, U
 from urllib.parse import quote
 
 import dill
+dill.extend(False)
 import jinja2
 import lazy_object_proxy
 import pendulum
