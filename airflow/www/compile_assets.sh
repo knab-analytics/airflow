@@ -31,4 +31,4 @@ fi
 npm install
 npm run build
 
-find package.json yarn.lock static/css static/js -type f | sort | xargs md5sum > "${MD5SUM_FILE}"
+find package.json static/css static/js -type f | sort | xargs md5sum > "${MD5SUM_FILE}"
