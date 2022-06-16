@@ -28,7 +28,7 @@ if [[ -d ./static/dist ]]; then
   rm -f ./static/dist/*
 fi
 
-npm install
+npm install --legacy-peer-deps
 npm run build
 
 find package.json static/css static/js -type f | sort | xargs md5sum > "${MD5SUM_FILE}"
